@@ -25,3 +25,7 @@ dist-ssr
 
 # copied from node_modules by scripts/copy-wasm.mjs
 public/wasm
+
+# Local test photo (a real face: never commit)
+test1.jpg
+public/dev/
