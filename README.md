@@ -11,7 +11,7 @@
 
 A web app that tells you which **glasses shapes** and **frame colors** suit your face, then lets you try them on live. It reads your face shape and skin tone from one selfie, ranks 16 frame styles and 28 colors with plain-language reasons, and draws the frames on your face. Everything runs in the browser: **your photo never leaves your device**, and nothing is uploaded or stored.
 
-> 🌐 **Live demo:** not deployed yet (see [Deploy](#-deploy)).
+> 🌐 **Live demo:** [coba-kacamataku.netlify.app](https://coba-kacamataku.netlify.app/)
 > Results are **style suggestions, not rules**.
 
 ## 📌 Table of Contents
