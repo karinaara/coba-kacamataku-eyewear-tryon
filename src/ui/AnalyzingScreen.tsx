@@ -42,7 +42,7 @@ export function AnalyzingScreen({ result, onDone }: { result: CaptureResult; onD
 
   const current = shown > 0 ? MEASURE_LINES[Math.min(shown, total) - 1]?.label : null
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-5 px-5 pb-8 pt-8">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col lg:max-w-lg gap-5 px-5 pb-8 pt-8">
       <h1 className="font-display text-2xl font-bold">Measuring your face</h1>
       <FacePhoto ref={overlayRef} result={result} label="Your photo with measurement lines being drawn over your face" />
       <div role="status" aria-live="polite" className="text-sm text-muted">

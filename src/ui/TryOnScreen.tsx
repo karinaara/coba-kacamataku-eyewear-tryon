@@ -169,7 +169,7 @@ export function TryOnScreen({
   const ranked = [...FACE_SHAPES].sort((a, b) => shape.probabilities[b] - shape.probabilities[a])
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-10 pt-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-10 pt-4 lg:max-w-6xl lg:px-8">
       <header className="flex items-center justify-between">
         <button type="button" onClick={onRetake} className="min-h-11 rounded-2xl px-3 text-sm font-semibold text-accent">
           Start over
@@ -180,6 +180,9 @@ export function TryOnScreen({
         </button>
       </header>
 
+      {/* On wide screens: the picture stays in view on the left while the controls scroll on the right. */}
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:items-start lg:gap-8">
+      <div className="flex flex-col gap-4 lg:sticky lg:top-4">
       {mode === 'live' ? (
         <LivePreview entry={entry} sizeFactor={sizeInfo.fitFactor} spec={spec3d} view3d={view3d} on3dFailed={on3dFailed} lite={lite} onLite={onLite} onUnavailable={onUnavailable} />
       ) : (
@@ -201,7 +204,9 @@ export function TryOnScreen({
           {notice}
         </p>
       )}
+      </div>
 
+      <div className="flex flex-col gap-4">
       <section className="flex flex-col gap-1" aria-label="3D view">
         <label className="flex min-h-11 items-center gap-3 text-sm">
           <input type="checkbox" className="size-5 accent-accent" checked={view3d} onChange={(e) => onView3d(e.target.checked)} />
@@ -362,6 +367,8 @@ export function TryOnScreen({
         ))}
         <li>Style suggestions, not rules.</li>
       </ul>
+      </div>
+      </div>
     </main>
   )
 }

@@ -57,7 +57,7 @@ export function LivePreview({
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="relative mx-auto w-full overflow-hidden rounded-3xl bg-ink" style={{ aspectRatio: size ? `${size.width} / ${size.height}` : '4 / 3', maxHeight: '46dvh' }}>
+      <div className="relative mx-auto max-h-[46dvh] w-full overflow-hidden rounded-3xl bg-ink lg:max-h-[72dvh]" style={{ aspectRatio: size ? `${size.width} / ${size.height}` : '4 / 3' }}>
         <div className="absolute inset-0 -scale-x-100">
           <video ref={videoRef} playsInline muted className="h-full w-full object-cover" />
           {/* A new canvas for each mode: one canvas cannot switch between 2D and WebGL. */}
@@ -134,7 +134,7 @@ export function PhotoPreview({ result, entry, sizeFactor, spec = null, view3d = 
   }, [result, entry, sizeFactor, width, height, view3d])
 
   return (
-    <div className="relative mx-auto w-full overflow-hidden rounded-3xl bg-ink" style={{ aspectRatio: `${width} / ${height}`, maxHeight: '46dvh' }}>
+    <div className="relative mx-auto max-h-[46dvh] w-full overflow-hidden rounded-3xl bg-ink lg:max-h-[72dvh]" style={{ aspectRatio: `${width} / ${height}` }}>
       <div className={`absolute inset-0 ${result.source === 'camera' ? '-scale-x-100' : ''}`}>
         <canvas ref={photoRef} className="h-full w-full" role="img" aria-label="Your photo with the selected glasses on" />
         <canvas key={view3d ? 'gl' : '2d'} ref={overlayRef} className="absolute inset-0 h-full w-full" aria-hidden="true" />

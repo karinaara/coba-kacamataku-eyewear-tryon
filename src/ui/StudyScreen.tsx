@@ -50,7 +50,7 @@ export function StudyScreen({ result, recs, onBack }: { result: CaptureResult; r
   }
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-10 pt-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col lg:max-w-3xl gap-4 px-5 pb-10 pt-4">
       <header className="flex items-center justify-between">
         <button type="button" onClick={onBack} className="min-h-11 rounded-2xl px-3 text-sm font-semibold text-accent">Back</button>
         <h1 className="font-display text-base font-bold">Rate these frames</h1>

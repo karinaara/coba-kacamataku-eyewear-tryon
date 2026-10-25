@@ -20,10 +20,11 @@ export function Landing({ onScan, onFile, busy, error, lite, onLite }: Props) {
     return () => window.clearTimeout(id)
   }, [])
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-6 pb-8 pt-10">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-6 pb-8 pt-10 lg:max-w-6xl lg:px-10">
       <p className="font-display text-lg font-bold text-accent">coba-kacamataku</p>
 
-      <div className="mt-8 grid aspect-square w-full place-items-center rounded-[28px] bg-accent-tint" aria-hidden="true">
+      <div className="flex flex-1 flex-col lg:flex-row lg:items-center lg:gap-16">
+      <div className="mt-8 grid aspect-square w-full place-items-center rounded-[28px] bg-accent-tint lg:mt-0 lg:max-w-[34rem] lg:flex-1" aria-hidden="true">
         <svg viewBox="0 0 200 120" className="w-3/4 text-accent" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round">
           <rect x="14" y="30" width="72" height="56" rx="26" />
           <rect x="114" y="30" width="72" height="56" rx="26" />
@@ -32,12 +33,13 @@ export function Landing({ onScan, onFile, busy, error, lite, onLite }: Props) {
         </svg>
       </div>
 
-      <h1 className="mt-8 font-display text-4xl font-bold leading-tight">Find frames that suit your face.</h1>
-      <p className="mt-3 text-base text-muted">
+      <div className="flex flex-1 flex-col lg:max-w-md">
+      <h1 className="mt-8 font-display text-4xl font-bold leading-tight lg:mt-0 lg:text-5xl">Find frames that suit your face.</h1>
+      <p className="mt-3 text-base text-muted lg:text-lg">
         We measure your face shape and skin tone, suggest frame shapes and colors, then let you try them on live.
       </p>
 
-      <div className="mt-auto flex flex-col items-center gap-2 pt-8">
+      <div className="mt-auto flex flex-col items-center gap-2 pt-8 lg:mt-0">
         {error && (
           <p role="alert" className="mb-2 w-full rounded-2xl bg-white p-4 text-sm">
             {error}
@@ -82,6 +84,8 @@ export function Landing({ onScan, onFile, busy, error, lite, onLite }: Props) {
           </svg>
           Your photo never leaves your device. Results are style suggestions, not rules.
         </p>
+      </div>
+      </div>
       </div>
     </main>
   )

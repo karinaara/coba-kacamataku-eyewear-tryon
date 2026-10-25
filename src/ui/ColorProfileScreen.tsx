@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import type { CaptureResult } from '../camera/captureResult'
 import { drawOverlay } from '../camera/drawOverlay'
 import { prepareOverlay } from '../camera/prepareOverlay'
@@ -104,7 +104,7 @@ export function ColorProfileScreen({
   const lowConfidence = profile ? profile.confidence < COLOR.confidence.offerQuestions : false
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-10 pt-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col lg:max-w-3xl gap-4 px-5 pb-10 pt-4">
       <header className="flex items-center justify-between">
         <button type="button" onClick={onBack} className="min-h-11 rounded-2xl px-3 text-sm font-semibold text-accent">
           Back

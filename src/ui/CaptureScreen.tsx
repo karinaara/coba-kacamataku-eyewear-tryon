@@ -73,7 +73,7 @@ export function CaptureScreen({ onCaptured, onBack, onFile, onDebug, lite, onLit
   const waiting = modelError ? modelError : status !== 'ready' ? 'Waiting for the camera...' : !modelReady ? 'Loading the face model. The first time takes a few seconds.' : 'Looking for your face...'
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-8 pt-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-8 pt-4 lg:max-w-5xl lg:px-8">
       <header className="flex items-center justify-between">
         <button type="button" onClick={onBack} className="min-h-11 rounded-2xl px-3 text-sm font-semibold text-accent">
           Back
@@ -84,9 +84,10 @@ export function CaptureScreen({ onCaptured, onBack, onFile, onDebug, lite, onLit
         </button>
       </header>
 
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:items-start lg:gap-8">
       <div
-        className="relative mx-auto w-full overflow-hidden rounded-3xl bg-ink"
-        style={{ aspectRatio: size ? `${size.width} / ${size.height}` : '3 / 4', maxHeight: '60dvh' }}
+        className="relative mx-auto max-h-[60dvh] w-full overflow-hidden rounded-3xl bg-ink lg:sticky lg:top-4 lg:max-h-[78dvh]"
+        style={{ aspectRatio: size ? `${size.width} / ${size.height}` : '3 / 4' }}
       >
         <video ref={videoRef} playsInline muted className="h-full w-full -scale-x-100 object-cover" />
         <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" aria-hidden="true" />
@@ -109,6 +110,7 @@ export function CaptureScreen({ onCaptured, onBack, onFile, onDebug, lite, onLit
         {loading && <p className="absolute inset-0 grid place-items-center bg-ink/60 text-sm font-medium text-white">{loading}</p>}
       </div>
 
+      <div className="flex flex-col gap-4">
       {camMessage && (
         <div role="alert" className="rounded-2xl bg-white p-4 text-sm">
           <p>{camMessage}</p>
@@ -179,6 +181,8 @@ export function CaptureScreen({ onCaptured, onBack, onFile, onDebug, lite, onLit
         </div>
         {ui.report && ui.faceFound ? <MetricsTable report={ui.report} /> : <p className="text-xs text-muted">No face yet.</p>}
       </details>
+      </div>
+      </div>
     </main>
   )
 }

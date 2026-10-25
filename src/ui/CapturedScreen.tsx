@@ -49,7 +49,7 @@ export function CapturedScreen({
 
   const pose = result.pose
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-8 pt-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-8 pt-4 lg:max-w-5xl lg:px-8">
       <header className="flex items-center justify-between">
         <button type="button" onClick={onRetake} className="min-h-11 rounded-2xl px-3 text-sm font-semibold text-accent">
           Retake
@@ -58,11 +58,13 @@ export function CapturedScreen({
         <span className="w-16" aria-hidden="true" />
       </header>
 
-      <div className="relative mx-auto w-full overflow-hidden rounded-3xl bg-ink" style={{ aspectRatio: `${width} / ${height}`, maxHeight: '60dvh' }}>
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:items-start lg:gap-8">
+      <div className="relative mx-auto max-h-[60dvh] w-full overflow-hidden rounded-3xl bg-ink lg:sticky lg:top-4 lg:max-h-[80dvh]" style={{ aspectRatio: `${width} / ${height}` }}>
         <canvas ref={photoRef} className={`h-full w-full ${mirror ? '-scale-x-100' : ''}`} role="img" aria-label="Your captured photo with face landmarks drawn over it" />
         <canvas ref={overlayRef} className="absolute inset-0 h-full w-full" aria-hidden="true" />
       </div>
 
+      <div className="flex flex-col gap-4">
       <p className="rounded-2xl bg-white p-4 text-sm" role="status">
         {result.source === 'camera'
           ? `Median of ${result.framesKept} frames (${result.framesRejected} rejected).`
@@ -95,6 +97,8 @@ export function CapturedScreen({
         <summary className="flex min-h-11 cursor-pointer items-center text-sm font-semibold">Details for tuning</summary>
         <MetricsTable report={result.quality} />
       </details>
+      </div>
+      </div>
     </main>
   )
 }

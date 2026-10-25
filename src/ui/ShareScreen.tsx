@@ -93,14 +93,15 @@ export function ShareScreen({
   }
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-10 pt-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-5 pb-10 pt-4 lg:max-w-4xl lg:px-8">
       <header className="flex items-center justify-between">
         <button type="button" onClick={onBack} className="min-h-11 rounded-2xl px-3 text-sm font-semibold text-accent">Back</button>
         <h1 className="font-display text-base font-bold">Share card</h1>
         <span className="w-16" aria-hidden="true" />
       </header>
 
-      <div className="mx-auto w-full max-w-xs overflow-hidden rounded-3xl bg-dark" style={{ aspectRatio: '9 / 16' }}>
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[20rem_minmax(0,1fr)] lg:items-start lg:gap-10">
+      <div className="mx-auto w-full max-w-xs overflow-hidden rounded-3xl bg-dark lg:sticky lg:top-4 lg:max-w-none" style={{ aspectRatio: '9 / 16' }}>
         {card ? (
           <img src={card.url} alt={alt} className="h-full w-full object-contain" />
         ) : (
@@ -110,6 +111,7 @@ export function ShareScreen({
         )}
       </div>
 
+      <div className="flex flex-col gap-4 lg:pt-4">
       <label className="flex min-h-11 items-center gap-3 text-sm">
         <input type="checkbox" className="size-5 accent-accent" checked={includePhoto} onChange={(e) => setIncludePhoto(e.target.checked)} />
         Include my photo
@@ -140,6 +142,8 @@ export function ShareScreen({
           {notice}
         </p>
       )}
+      </div>
+      </div>
     </main>
   )
 }
