@@ -50,7 +50,8 @@ export default defineConfig({
             urlPattern: ({ url }) => /\/(models|wasm)\//.test(url.pathname),
             handler: 'CacheFirst',
             options: {
-              cacheName: 'ml-assets-v1',
+              // v2: v1 may hold the .js files cached with a wrong content type by an earlier deploy; a new name skips them.
+              cacheName: 'ml-assets-v2',
               expiration: { maxEntries: 8 },
               cacheableResponse: { statuses: [200] },
             },
