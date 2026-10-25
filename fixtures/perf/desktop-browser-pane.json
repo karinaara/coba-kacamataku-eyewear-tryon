@@ -1,0 +1,14 @@
+{
+  "device": "Desktop PC, Claude app browser pane (Chromium)",
+  "kind": "laptop",
+  "note": "Measured in the Claude desktop app browser pane (an embedded Chromium that throttles timers and may use software rendering), on a steady 30 fps photo source. Conservative: the same machine showed 70-82 detections per second in a normal Chrome window in M1. Re-run in a normal browser and on a phone.",
+  "modelLoadMs": 378.30000000074506,
+  "modelLoadWarmMs": 364.6000000014901,
+  "firstDetectionMs": 2187,
+  "detectFrames": 120,
+  "detectMsMedian": 36.25,
+  "detectMsP95": 57.099999997764826,
+  "detectFps": 13.932751253946407,
+  "headroomFps": 27.586206896551722,
+  "delegate": "GPU"
+}

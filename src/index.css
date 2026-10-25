@@ -1,0 +1,25 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/space-grotesk';
+@import 'tailwindcss';
+
+/* Design tokens from the approved mockups (brief section 2). */
+@theme {
+  --color-ground: #f3f4f6;
+  --color-ink: #111827;
+  --color-muted: #4b5563;
+  --color-accent: #0f766e;
+  --color-accent-tint: #d5eae7;
+  --color-chip: #e3f1ef;
+  --color-chip-ink: #0b4f4a;
+  --color-dark: #0f172a;
+  --color-warn: #b45309;
+  --font-display: 'Space Grotesk Variable', 'Space Grotesk', sans-serif;
+  --font-sans: 'Inter Variable', 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ground);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

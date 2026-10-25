@@ -1,0 +1,343 @@
+{
+ "note": "One photo of one person (test1) re-analyzed after 16 image changes. This is NOT a stability test; see docs/eval/README.md.",
+ "variants": [
+  {
+   "name": "original",
+   "group": "original",
+   "ok": true,
+   "lengthToWidth": 1.3915,
+   "foreheadToCheek": 0.882,
+   "jawToCheek": 0.7829,
+   "chinAngle": 110.2643,
+   "jawAngularity": 20.5148,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9447,
+   "irisDiameterPx": 47.5288
+  },
+  {
+   "name": "size x0.5",
+   "group": "scale",
+   "ok": true,
+   "lengthToWidth": 1.386,
+   "foreheadToCheek": 0.8809,
+   "jawToCheek": 0.7806,
+   "chinAngle": 110.0713,
+   "jawAngularity": 19.9773,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9023,
+   "irisDiameterPx": 24.0345
+  },
+  {
+   "name": "size x0.75",
+   "group": "scale",
+   "ok": true,
+   "lengthToWidth": 1.3925,
+   "foreheadToCheek": 0.8821,
+   "jawToCheek": 0.7827,
+   "chinAngle": 110.2104,
+   "jawAngularity": 19.9634,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9406,
+   "irisDiameterPx": 35.935
+  },
+  {
+   "name": "size x1.25",
+   "group": "scale",
+   "ok": true,
+   "lengthToWidth": 1.3916,
+   "foreheadToCheek": 0.8826,
+   "jawToCheek": 0.7826,
+   "chinAngle": 110.2471,
+   "jawAngularity": 20.3696,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9382,
+   "irisDiameterPx": 47.8889
+  },
+  {
+   "name": "brightness x0.7",
+   "group": "light",
+   "ok": true,
+   "lengthToWidth": 1.393,
+   "foreheadToCheek": 0.883,
+   "jawToCheek": 0.7821,
+   "chinAngle": 110.4242,
+   "jawAngularity": 20.4257,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "dark",
+   "confidence": 0.9203,
+   "irisDiameterPx": 47.8396
+  },
+  {
+   "name": "brightness x1.3",
+   "group": "light",
+   "ok": true,
+   "lengthToWidth": 1.3872,
+   "foreheadToCheek": 0.8801,
+   "jawToCheek": 0.782,
+   "chinAngle": 110.544,
+   "jawAngularity": 20.0754,
+   "primary": "oval",
+   "undertone": "neutral",
+   "depth": "light",
+   "confidence": 0.687,
+   "irisDiameterPx": 47.6421
+  },
+  {
+   "name": "JPEG quality 0.5",
+   "group": "compression",
+   "ok": true,
+   "lengthToWidth": 1.3915,
+   "foreheadToCheek": 0.8808,
+   "jawToCheek": 0.785,
+   "chinAngle": 110.1424,
+   "jawAngularity": 20.1819,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9406,
+   "irisDiameterPx": 47.4763
+  },
+  {
+   "name": "JPEG quality 0.25",
+   "group": "compression",
+   "ok": true,
+   "lengthToWidth": 1.3844,
+   "foreheadToCheek": 0.8827,
+   "jawToCheek": 0.7826,
+   "chinAngle": 110.1857,
+   "jawAngularity": 20.4688,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9272,
+   "irisDiameterPx": 47.8709
+  },
+  {
+   "name": "JPEG quality 0.1",
+   "group": "compression",
+   "ok": true,
+   "lengthToWidth": 1.3697,
+   "foreheadToCheek": 0.8879,
+   "jawToCheek": 0.7871,
+   "chinAngle": 110.0197,
+   "jawAngularity": 19.9297,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.8742,
+   "irisDiameterPx": 47.162
+  },
+  {
+   "name": "rotated -6 deg",
+   "group": "rotation",
+   "ok": true,
+   "lengthToWidth": 1.3826,
+   "foreheadToCheek": 0.8824,
+   "jawToCheek": 0.781,
+   "chinAngle": 109.9986,
+   "jawAngularity": 20.2343,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.873,
+   "irisDiameterPx": 48.0491
+  },
+  {
+   "name": "rotated -3 deg",
+   "group": "rotation",
+   "ok": true,
+   "lengthToWidth": 1.3888,
+   "foreheadToCheek": 0.8833,
+   "jawToCheek": 0.7718,
+   "chinAngle": 110.0132,
+   "jawAngularity": 20.6034,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.8889,
+   "irisDiameterPx": 49.1925
+  },
+  {
+   "name": "rotated +3 deg",
+   "group": "rotation",
+   "ok": true,
+   "lengthToWidth": 1.3951,
+   "foreheadToCheek": 0.8834,
+   "jawToCheek": 0.7854,
+   "chinAngle": 110.5944,
+   "jawAngularity": 19.8844,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9441,
+   "irisDiameterPx": 47.4958
+  },
+  {
+   "name": "rotated +6 deg",
+   "group": "rotation",
+   "ok": true,
+   "lengthToWidth": 1.4058,
+   "foreheadToCheek": 0.8873,
+   "jawToCheek": 0.7919,
+   "chinAngle": 109.4735,
+   "jawAngularity": 20.0666,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 1,
+   "irisDiameterPx": 46.9361
+  },
+  {
+   "name": "cropped 5% each side",
+   "group": "crop",
+   "ok": true,
+   "lengthToWidth": 1.3821,
+   "foreheadToCheek": 0.8833,
+   "jawToCheek": 0.7816,
+   "chinAngle": 110.7528,
+   "jawAngularity": 20.19,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.8236,
+   "irisDiameterPx": 47.5674
+  },
+  {
+   "name": "cropped 10% each side",
+   "group": "crop",
+   "ok": true,
+   "lengthToWidth": 1.3871,
+   "foreheadToCheek": 0.8841,
+   "jawToCheek": 0.7795,
+   "chinAngle": 110.2939,
+   "jawAngularity": 19.9856,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.8764,
+   "irisDiameterPx": 48.3291
+  },
+  {
+   "name": "shifted 3% right",
+   "group": "shift",
+   "ok": true,
+   "lengthToWidth": 1.4024,
+   "foreheadToCheek": 0.8843,
+   "jawToCheek": 0.7777,
+   "chinAngle": 110.3123,
+   "jawAngularity": 19.5288,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.9897,
+   "irisDiameterPx": 48.8515
+  },
+  {
+   "name": "shifted 3% up",
+   "group": "shift",
+   "ok": true,
+   "lengthToWidth": 1.3852,
+   "foreheadToCheek": 0.8803,
+   "jawToCheek": 0.7767,
+   "chinAngle": 110.5092,
+   "jawAngularity": 19.3803,
+   "primary": "oval",
+   "undertone": "cool",
+   "depth": "tan",
+   "confidence": 0.8029,
+   "irisDiameterPx": 49.1178
+  }
+ ],
+ "summary": {
+  "variants": 17,
+  "withFace": 17,
+  "features": {
+   "lengthToWidth": {
+    "n": 17,
+    "mean": 1.3892003354455502,
+    "std": 0.008136745509247208,
+    "cv": 0.005857143351925232,
+    "min": 1.3696865373193157,
+    "max": 1.4057978768173751
+   },
+   "foreheadToCheek": {
+    "n": 17,
+    "mean": 0.8829672722568374,
+    "std": 0.002133696228817977,
+    "cv": 0.002416506586211644,
+    "min": 0.880142572631903,
+    "max": 0.8878991954314017
+   },
+   "jawToCheek": {
+    "n": 17,
+    "mean": 0.7819440607302106,
+    "std": 0.004388592480341272,
+    "cv": 0.005612412320445313,
+    "min": 0.7717714577573774,
+    "max": 0.7919432704200239
+   },
+   "chinAngle": {
+    "n": 17,
+    "mean": 110.2386411171517,
+    "std": 0.29406810364831787,
+    "cv": 0.002667559221233585,
+    "min": 109.47350695540038,
+    "max": 110.75276514068308
+   },
+   "jawAngularity": {
+    "n": 17,
+    "mean": 20.104702249705596,
+    "std": 0.32985478384985395,
+    "cv": 0.016406847500299797,
+    "min": 19.38032315591053,
+    "max": 20.603373550788945
+   }
+  },
+  "lengthToWidthShiftByGroup": {
+   "scale": 0.00220556492051364,
+   "light": 0.002885263335385857,
+   "compression": 0.00970326647185534,
+   "rotation": 0.007363894312216013,
+   "crop": 0.006985740035712618,
+   "shift": 0.008584298616956754
+  },
+  "shapeFlipRate": 0,
+  "shapes": {
+   "oval": 17
+  },
+  "undertoneFlipRate": 0.05882352941176472,
+  "depthFlipRate": 0.11764705882352944,
+  "confidence": {
+   "n": 17,
+   "mean": 0.8984633782398171,
+   "std": 0.07523455876183681,
+   "cv": 0.0837369230443528,
+   "min": 0.6870455574170754,
+   "max": 1
+  },
+  "changed": [
+   {
+    "name": "brightness x0.7",
+    "what": [
+     "depth tan to dark"
+    ]
+   },
+   {
+    "name": "brightness x1.3",
+    "what": [
+     "undertone cool to neutral",
+     "depth tan to light"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+# One row per face. id must match the fixture file name (without .json).
+# Three people label independently, from the photo only, without seeing the app's answer.
+# Shapes: oval, round, square, oblong, heart, diamond.
+id,labeler1,labeler2,labeler3

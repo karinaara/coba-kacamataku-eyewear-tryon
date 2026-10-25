@@ -1,0 +1,83 @@
+{
+  "generated": "2026-10-25",
+  "report": {
+    "shape": {
+      "status": "no-data",
+      "message": "No faces with a labeler majority yet. Needs at least 30.",
+      "items": 0,
+      "withConsensus": 0,
+      "noConsensusIds": [],
+      "labelsWithoutFixture": [],
+      "fixturesWithoutLabel": [],
+      "agreement": {
+        "labelers": 0,
+        "unanimous": 0,
+        "pairwise": null,
+        "fleissKappa": null,
+        "labelerVsMajority": null
+      },
+      "top1": null,
+      "top2": null,
+      "matchesAnyLabeler": null,
+      "logLoss": null,
+      "confusion": null,
+      "perClass": null,
+      "rows": []
+    },
+    "stability": {
+      "status": "no-data",
+      "message": "No captures of one person yet. Needs at least 10.",
+      "people": [],
+      "meanCv": {
+        "lengthToWidth": null,
+        "foreheadToCheek": null,
+        "jawToCheek": null,
+        "chinAngle": null,
+        "jawAngularity": null
+      },
+      "meanShapeFlipRate": null
+    },
+    "color": {
+      "status": "no-data",
+      "message": "No lighting conditions for one person yet. Needs at least 3.",
+      "rows": [],
+      "flips": 0,
+      "comparisons": 0,
+      "confidenceLower": 0,
+      "confidenceNoticedBigDrift": {
+        "noticed": 0,
+        "of": 0
+      }
+    },
+    "ratings": {
+      "status": "no-data",
+      "message": "No participants who rated both arms yet. Needs at least 5.",
+      "participants": 0,
+      "ratings": 0,
+      "excluded": [],
+      "result": null
+    },
+    "perf": {
+      "status": "insufficient",
+      "message": "Only 1 device measured so far; needs at least 2. Numbers below are shown for completeness, not as a result.",
+      "entries": [
+        {
+          "device": "Desktop PC, Claude app browser pane (Chromium)",
+          "kind": "laptop",
+          "note": "Measured in the Claude desktop app browser pane (an embedded Chromium that throttles timers and may use software rendering), on a steady 30 fps photo source. Conservative: the same machine showed 70-82 detections per second in a normal Chrome window in M1. Re-run in a normal browser and on a phone.",
+          "modelLoadMs": 378.30000000074506,
+          "modelLoadWarmMs": 364.6000000014901,
+          "firstDetectionMs": 2187,
+          "detectFrames": 120,
+          "detectMsMedian": 36.25,
+          "detectMsP95": 57.099999997764826,
+          "detectFps": 13.932751253946407,
+          "headroomFps": 27.586206896551722,
+          "delegate": "GPU"
+        }
+      ],
+      "hasPhone": false
+    }
+  },
+  "tuning": null
+}
