@@ -160,13 +160,13 @@ The camera needs `localhost` or HTTPS.
 
 ## ☁️ Deploy
 
-The build is static (`dist/`). It has **not been deployed yet**. Pick one:
+The build is static (`dist/`) and is deployed on **Netlify**: [coba-kacamataku.netlify.app](https://coba-kacamataku.netlify.app/).
 
 - **Netlify:** import the repo; `netlify.toml` sets the build command, output folder and cache headers.
-- **Vercel:** import the repo; `vercel.json` does the same.
-- **GitHub Pages:** push to `main` with Pages set to "GitHub Actions"; `.github/workflows/pages.yml` builds with `BASE_PATH=/<repo-name>/`. (Pages for a private repo needs a plan that supports it.)
+- **Vercel:** works the same way; `vercel.json` has the same headers.
+- **GitHub Pages:** not set up. Pages for a private repo needs a paid plan. To host on a subpath anyway, build with `BASE_PATH=/<repo-name>/ npm run build`.
 
-The camera needs HTTPS (all three provide it). After deploying, open the URL on a phone, check the camera, and run Lighthouse on the live URL.
+The camera needs HTTPS (Netlify and Vercel provide it). After deploying, open the URL on a phone, check the camera, and run Lighthouse on the live URL.
 
 ## 📋 Status & Known Gaps
 

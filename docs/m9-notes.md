@@ -6,7 +6,7 @@
 - **Loading and error states**: model-loading overlay, "Try loading again" for model errors, an error boundary (`src/ui/ErrorBoundary.tsx`) that logs to the console only.
 - **Lite mode**: 640 x 480 camera, 15 fps cap. Saved in localStorage (`kacamata.lite.v1`), on by default for saveData or low-memory devices. A slow-device hint offers it when the live preview drops under 12 fps for 3 s (`SLOW_DEVICE` in `src/core/config/camera.ts`).
 - **PWA** (`vite-plugin-pwa`): app shell precached (26 entries, about 873 KiB). The face model and WebAssembly runtime (about 17 MB together) are cached the first time they are used (`ml-assets-v1`), and prefetched at low priority on the landing page unless saveData or a 2g/3g connection is reported.
-- **Deploy configs**: `netlify.toml`, `vercel.json`, `.github/workflows/pages.yml` (uses `BASE_PATH=/<repo>/`). Nothing was deployed.
+- **Deploy configs**: `netlify.toml` and `vercel.json`. (A GitHub Pages workflow was also written, then removed: Pages is not available for this private repo, and the site is on Netlify.) At the time of writing this note nothing was deployed; the site is now live on Netlify.
 
 ## Measured
 
